@@ -1,6 +1,6 @@
 'use strict';
 define(['angular'], function(angular) {
-  angular.module('pageTitleService', [])
+  angular.module('page-title-service', [])
     .factory('PageTitleService', ['$state', function($state) {
       var validStateControllerCombinations = {};
 
@@ -20,7 +20,7 @@ define(['angular'], function(angular) {
           document.title = newTitle;
         }
       }
-      
+
       return {
         loadLexicon: loadLexicon,
         setPageTitle: setPageTitle
