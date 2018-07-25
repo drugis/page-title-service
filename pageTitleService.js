@@ -4,12 +4,12 @@ define(['angular'], function(angular) {
     .factory('PageTitleService', ['$state', function($state) {
       var validStateControllerCombinations = {};
 
-      function loadLexicon(whiteListPromise) {
-        whiteListPromise.then(function(result) {
-          var loadedWhiteList = result.data;
-          for (var stateName in loadedWhiteList){
-            if(loadedWhiteList.hasOwnProperty(stateName)){
-              validStateControllerCombinations[stateName] = loadedWhiteList[stateName];
+      function loadLexicon(newCombinationsPromise) {
+        newCombinationsPromise.then(function(result) {
+          var newCombinations = result.data;
+          for (var stateName in newCombinations){
+            if(newCombinations.hasOwnProperty(stateName)){
+              validStateControllerCombinations[stateName] = newCombinations[stateName];
             }
           }
         });
