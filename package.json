@@ -1,11 +1,11 @@
 {
   "name": "page-title-service",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple angular service which lets controller set page titles. ",
-  "repository": "git@github.com:chinook25/pageTitleService.git",
+  "repository": "git@github.com:drugis/pageTitleService.git",
   "author": "Joris de Keijser <chinook25@gmail.com>",
   "main": "pageTitleService.js",
   "dependencies": {
-    "angular": "~1.7.2"
+    "angular": "~1.6.6"
   }
 }
