@@ -6,7 +6,7 @@ define(['angular'], function(angular) {
 
       function loadLexicon(newCombinationsPromise) {
         newCombinationsPromise.then(function(result) {
-          var newCombinations = result.data;
+          var newCombinations = result.data || result;
           for (var stateName in newCombinations){
             if(newCombinations.hasOwnProperty(stateName)){
               validStateControllerCombinations[stateName] = newCombinations[stateName];
